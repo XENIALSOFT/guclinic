@@ -1,0 +1,15 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+
+#__nuxt {
+  @apply w-full h-full min-h-svh;
+}
+
+/* 액티브 라우터 */
+.router-link-active, .router-link-exact-active {
+  @apply font-semibold;
+}
+
+/* 스와이퍼 */
+.swiper-pagination-fraction {
+  @apply text-start text-sm text-white px-4;
+}
