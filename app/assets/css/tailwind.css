@@ -11,4 +11,8 @@
   body {
     @apply bg-[#fff8f4];
   }
+
+  a:hover {
+    @apply underline;
+  }
 }

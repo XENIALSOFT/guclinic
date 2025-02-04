@@ -1,3 +1,3 @@
 <template>
-  시술 예약
+  지유 둘러보기
 </template>
