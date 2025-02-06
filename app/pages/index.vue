@@ -46,9 +46,6 @@ useSwiper(container as Ref);
         class="max-w-screen-md"
         :loop="true"
         :autoplay="true"
-        :pagination="{
-          type: `fraction`,
-        }"
       >
         <swiper-slide
           v-for="(slide, index) of slides"
@@ -81,21 +78,87 @@ useSwiper(container as Ref);
       </h5>
     </div>
   </section>
+  <section class="mt-12">
+    <NuxtLink to="/browse">
+      <img
+        src="/ed2c4745ac695bc025ca5d0afd908918c616c021e85ea5e6afd8604590cf9a4b.png"
+        alt="브랜드 스토리 보러가기"
+      >
+    </NuxtLink>
+  </section>
+  <section class="mt-12">
+    <div class="px-5">
+      <div class="flex justify-between">
+        <h3 class="text-base font-bold">
+          카테고리 인기시술 TOP 5
+        </h3>
+      </div>
+      <h5 class="mt-1 text-xs text-gray-400">
+        관심있는 카테고리의 인기시술을 둘러보세요.
+      </h5>
+    </div>
+    <div class="px-5">
+      <div class="mt-7 grid grid-cols-4 border-y border-gray-400">
+        <div
+          v-for="i in 16"
+          :key="i"
+          class="border-b border-[#edecec] p-4 text-center text-xs font-medium text-gray-400"
+        >
+          <button>줄기세포시술</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mt-7">
+    <div class="flex flex-col gap-4 bg-gray-100 px-6 py-5">
+      <h5 class="text-center text-sm">
+        원하는 시술을 검색해보세요
+      </h5>
+      <label class="flex h-10 appearance-none items-center gap-4 bg-white px-4 focus-within:shadow-none focus:shadow-none">
+        <input
+          type="text"
+          class="grow bg-transparent text-xs font-medium"
+          placeholder="시술명을 검색해보세요."
+        >
+        <button>
+          <img
+            src="~/assets/icons/icon-action-topbar-search-black.svg"
+            alt="검색"
+            width="16"
+            height="16"
+          >
+        </button>
+      </label>
+      <div class="flex justify-center gap-4 font-medium text-gray-500">
+        <a href="#!">슈링크</a>
+        <a href="#!">인모드</a>
+        <a href="#!">스타토닝</a>
+        <a href="#!">울쎄라</a>
+      </div>
+    </div>
+  </section>
+  <section class="my-12">
+    <div class="px-5">
+      <div class="flex justify-between">
+        <h3 class="text-base font-bold">
+          지유클리닉 오시는 길
+        </h3>
+        <NuxtLink to="/event">
+          <img
+            src="~/assets/icons/icon-general-arrow-long-right-black.svg"
+            alt="지유클리닉 오시는 길"
+          >
+        </NuxtLink>
+      </div>
+      <p class="mt-1 text-sm ">
+        서울특별시 서초구 서초대로77길 54<br>더블유타워 3층, 4층 지유클리닉
+      </p>
+    </div>
+    <div class="mt-7">
+      <img
+        src="/17cea5ef885ec8bb1271c508eaf1f17bc365d5619aae3b7505f4060bcb493b34.png"
+        alt="지유클리닉 지도"
+      >
+    </div>
+  </section>
 </template>
-
-<style>
-.swiper-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
-swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
-  height: 20vh;
-  font-size: 4rem;
-  font-weight: bold;
-}
-</style>

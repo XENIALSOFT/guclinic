@@ -1,5 +1,5 @@
 <template>
-  <footer class="flex flex-col gap-12 bg-[#f5f5f5] p-6">
+  <footer class="flex flex-col gap-12 bg-gray-100 p-6">
     <section class="flex flex-col gap-6 text-xs text-gray-700">
       <div>
         <p>평일</p>
