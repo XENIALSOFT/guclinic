@@ -75,7 +75,7 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'ko',
       },
-      title: 'Nuxt 3 + TailwindCSS | XENIALSOFT Inc.',
+      title: '(주)제니얼소프트 | XENIALSOFT Inc.',
       viewport: 'width=device-width,initial-scale=1',
       link: [
         // { rel: 'icon', type: '', href: '/favicon.ico', sizes: 'any' },
@@ -118,6 +118,26 @@ export default defineNuxtConfig({
    * 형식: 'YYYY-MM-DD'
    */
   compatibilityDate: '2024-11-01',
+  /**
+   * Nitro 설정을 구성합니다.
+   * Nitro는 Nuxt의 서버 엔진으로, 서버 사이드 렌더링(SSR), 정적 사이트 생성(SSG) 및 서버리스 배포를
+   * 지원하는 경량 고성능 서버를 제공합니다. 이 설정을 통해 Nitro의 동작 방식을
+   * 세부적으로 조정할 수 있습니다.
+   *
+   * 예시:
+   * nitro: {
+   *   preset: 'node-server', // 사용할 프리셋 지정 (예: 'node-server', 'vercel', 'netlify' 등)
+   *   // 추가 설정 옵션들을 여기에 추가할 수 있습니다.
+   * }
+   */
+  nitro: {
+    esbuild: {
+      options: {
+        target: 'esnext',
+      },
+    },
+    preset: 'github-pages',
+  },
   /**
    * ESLint 설정을 구성합니다.
    * ESLint는 JavaScript 및 Vue.js 코드의 스타일과 품질을
