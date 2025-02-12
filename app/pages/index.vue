@@ -43,7 +43,7 @@ useSwiper(container as Ref);
     <ClientOnly>
       <swiper-container
         ref="swiperContainer"
-        class="max-w-screen-md"
+        class="w-screen max-w-screen-md"
         :loop="true"
         :autoplay="true"
       >
