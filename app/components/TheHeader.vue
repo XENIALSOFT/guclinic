@@ -1,12 +1,14 @@
 <template>
   <header class="fixed top-0 z-10 w-full max-w-screen-md bg-white">
     <div class="flex justify-between px-4 py-3">
-      <img
-        src="~/assets/images/header-logo.svg"
-        alt="지유클리닉"
-        width="36"
-        height="36"
-      >
+      <NuxtLink to="/">
+        <img
+          src="~/assets/images/header-logo.svg"
+          alt="지유클리닉"
+          width="36"
+          height="36"
+        >
+      </NuxtLink>
       <div class="flex items-center gap-3">
         <button>
           <img
