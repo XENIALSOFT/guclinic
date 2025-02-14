@@ -22,7 +22,7 @@ const navigations = computed<Navigation[]>(() => [
 </script>
 
 <template>
-  <div class="flex px-4 ">
+  <div class="flex border-b px-4">
     <NuxtLink
       v-for="navigation of navigations"
       :key="(navigation.to as string)"
