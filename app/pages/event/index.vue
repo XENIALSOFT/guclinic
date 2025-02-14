@@ -75,7 +75,7 @@ function diff(str: string) {
           EVENT
         </span>
         <div class="flex justify-between">
-          <div class="max-w-60">
+          <div class="max-w-56">
             <dt class="text-sm font-bold">
               {{ item.title }}
             </dt>
@@ -89,11 +89,11 @@ function diff(str: string) {
         </div>
         <div class="flex items-end justify-between">
           <div class="flex flex-col font-medium">
-            <span class="mb-1.5 text-xs text-[#9d8077]">
+            <span class="mb-1.5 text-[10px] text-[#9d8077] md:text-xs">
               ~  {{ format(item.finished) }} ({{ diff(item.finished) }}일남음)
             </span>
             <span class="text-gray-700">
-              <span class="text-xl">
+              <span class="text-base md:text-lg lg:text-xl">
                 {{ Intl.NumberFormat(`ko-KR`).format(item.price.min) }}
                 <template v-if="item.price.max">
                   ~

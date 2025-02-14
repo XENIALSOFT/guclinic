@@ -84,7 +84,7 @@ const items = ref<{
         >
       </button>
     </label>
-    <div class="grid grid-cols-4 border-y border-gray-400">
+    <div class="grid grid-cols-3 border-y border-gray-400 md:grid-cols-4">
       <div
         v-for="(popular, index) in populars"
         :key="index"
@@ -94,7 +94,7 @@ const items = ref<{
           :class="{
             'text-[#9d8077]': index === 0,
           }"
-          class="hover:text-[#9d8077]"
+          class="w-full truncate hover:text-[#9d8077]"
         >
           {{ popular }}
         </button>
@@ -106,7 +106,7 @@ const items = ref<{
       class="flex flex-col gap-y-8 rounded-lg bg-gray-100 p-6"
     >
       <div class="flex justify-between">
-        <div class="max-w-60">
+        <div class="max-w-56">
           <dt class="text-sm font-bold">
             {{ item.title }}
           </dt>
@@ -119,7 +119,7 @@ const items = ref<{
         </span>
       </div>
       <div class="flex justify-between">
-        <span class="content-end text-xl font-medium text-gray-700">
+        <span class="content-end text-base font-medium text-gray-700 md:text-lg lg:text-xl">
           {{ Intl.NumberFormat(`ko-KR`).format(item.price.min) }}
           ~
           {{ Intl.NumberFormat(`ko-KR`).format(item.price.max) }}

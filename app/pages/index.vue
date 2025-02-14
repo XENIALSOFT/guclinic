@@ -109,7 +109,7 @@ useSwiper(container as Ref);
       </h5>
     </div>
     <div class="px-5">
-      <div class="mt-7 grid grid-cols-4 border-y border-gray-400">
+      <div class="mt-7 grid grid-cols-3 border-y border-gray-400 md:grid-cols-4">
         <div
           v-for="(popular, index) in populars"
           :key="index"
@@ -119,7 +119,7 @@ useSwiper(container as Ref);
             :class="{
               'text-[#9d8077]': index === 0,
             }"
-            class="hover:text-[#9d8077]"
+            class="w-full truncate hover:text-[#9d8077]"
           >
             {{ popular }}
           </button>
@@ -164,7 +164,7 @@ useSwiper(container as Ref);
           >
         </button>
       </label>
-      <div class="flex justify-center gap-4 font-medium text-gray-500">
+      <div class="flex justify-center gap-4 text-sm font-medium text-gray-500 md:text-base">
         <a href="#!">슈링크</a>
         <a href="#!">인모드</a>
         <a href="#!">스타토닝</a>
