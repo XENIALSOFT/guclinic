@@ -219,7 +219,7 @@
   </section>
 
   <section class="relative mt-32">
-    <div class="absolute -top-16 right-0 h-full w-[calc(100%-1.5rem)] bg-[#fff8f4]" />
+    <div class="absolute -top-16 right-0 h-full w-[calc(100%-1.5rem)] bg-primary" />
     <div class="relative z-[1] flex flex-col gap-y-20">
       <img
         alt="지유공간1"

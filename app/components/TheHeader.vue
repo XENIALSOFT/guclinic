@@ -34,14 +34,14 @@
             height="24"
           >
         </a>
-        <a href="#!">
+        <NuxtLink to="/cart">
           <img
             src="~/assets/icons/icon-general-cart-black.svg"
             alt="장바구니"
             width="24"
             height="24"
           >
-        </a>
+        </NuxtLink>
         <button class="text-sm font-medium">
           로그인
         </button>

@@ -9,7 +9,7 @@
   }
 
   body {
-    @apply bg-[#fff8f4];
+    @apply bg-primary;
   }
 
   a:hover {
